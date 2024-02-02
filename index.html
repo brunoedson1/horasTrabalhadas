@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Horas Trabalhadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Calculadora de Horas Trabalhadas</h1>
+        <label for="horaInicio">Hora de Início:</label>
+        <input type="time" v-model="horaInicio" id="horaInicio">
+        <label for="horaFim">Hora de Término:</label>
+        <input type="time" v-model="horaFim" id="horaFim">
+        <button @click="calcularHoras">Calcular</button>
+        <div v-if="resultado">
+            <p>Horas Diurnas: {{ resultado.diurnas }}</p>
+            <p>Horas Noturnas: {{ resultado.noturnas }}</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
