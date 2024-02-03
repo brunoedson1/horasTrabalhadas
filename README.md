@@ -1,4 +1,3 @@
-# projetoHoraTrabalho
 
 Para rodar o projeto, abra o terminal na pasta do projeto e digite:
 
